@@ -1,0 +1,910 @@
+/* header 부분 */
+header {
+  background-color: rgb(54, 52, 52);
+}
+.header_title a {
+  height: 90%;
+  width: 300px;
+  padding: 0 30px;
+  margin: 0 auto;
+  font-family: "Papyrus";
+  font-size: 70px;
+  color: white;
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.header_nav {
+  float: right;
+}
+.header_nav_menu {
+  padding: 0;
+  margin: 0px;
+  display: flex;
+  list-style: none;
+}
+.header_nav_menu a {
+  height: 30px;
+  width: 100px;
+  padding: 10px;
+  font-family: "Papyrus";
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.iframe {
+  display: block;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+main {
+  height: 1079px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("running-track-g158557ac0_1920.jpg");
+}
+
+/* 공통 */
+.page_label {
+  height: auto;
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Papyrus";
+  font-size: 40px;
+}
+.button_area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+ul::-webkit-scrollbar-thumb {
+  height: 10%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+ul::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+  display: none;
+}
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+textarea::-webkit-scrollbar-thumb {
+  height: 10%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+textarea::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+  display: none;
+}
+
+/* 메인 화면 */
+.blur_button {
+  height: 40vh;
+  width: 80vh;
+  margin: auto;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border: 3px solid hsla(0, 3%, 46%, 0.3);
+  border-radius: 30px;
+  cursor :pointer;
+}
+.white_box {
+  height: 30vh;
+  width: 70vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 5px solid white;
+  border-radius: 30px;
+}
+h3.main_title {
+  margin: 1vh auto;
+  font-family: "papyrus";
+  font-size: 6vh;
+  color: white;
+}
+h1.main_title {
+  margin: 1vh auto;
+  font-family: "papyrus";
+  font-size: 9vh;
+  color: white;
+}
+
+/* 로그인 화면 */
+.login_main_panel {
+  align-items: center;
+}
+.login_panel {
+  height: 50%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border: 3px solid hsla(0, 3%, 46%, 0.3);
+  border-radius: 40px;
+}
+.login_panel_ul {
+  height: 100%;
+  width: 70%;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.login_panel_ul li {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+.login_panel_ul li input {
+  height: 30px;
+  width: 50%;
+  background: none;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.login_panel_ul li input:focus {
+  border: 2px solid orange;
+  outline: 2px solid white;
+}
+.login_panel_ul li input[type="text" i], .login_panel_ul li input[type="password" i] {
+  padding: 0 10px;
+}
+.login_label_name {
+  height: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-family: "Papyrus";
+  font-size: 16px;
+}
+
+/* 아이디 비번 찾기 화면 */
+.find_info_panel {
+  margin: 20px auto;
+}
+.find_info_panel_ul {
+  height: 400px;
+  width: 65vw;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+}
+.find_info_panel_ul li {
+  width: 100%;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.find_info_panel_ul li input {
+  height: 30px;
+  width: 50%;
+  background: none;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.find_info_panel_ul li input:focus {
+  border: 2px solid orange;
+  outline: 2px solid white;
+}
+.find_info_panel_ul li input[type="text" i] {
+  padding: 0 10px;
+}
+.find_info_button_id {
+  height: 50px;
+  width: 40%;
+  font-family: "papyrus";
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: hsla(207, 56%, 56%, 0.5);
+}
+.find_info_button_pw {
+  height: 50px;
+  width: 40%;
+  font-family: "papyrus";
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: hsla(0, 52%, 57%, 0.5);
+}
+.find_info_label_name {
+  height: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Papyrus";
+}
+
+/* 회원가입 & 마이페이지 */
+.sign_panel_ul {
+  height: 100%;
+  width: 70%;
+  padding: 0;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.sign_panel_ul li {
+  list-style: none;
+  margin: 0 auto;
+}
+.sign_panel_ul li input {
+  background: none;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sign_panel_ul li input:focus {
+  border: 2px solid orange;
+  outline: 2px solid white;
+}
+.sign_panel_ul li input[type="text" i], .sign_panel_ul li input[type="password" i] {
+  padding: 0 10px;
+}
+.sign_panel_ul li input[type="number" i] {
+  width: 309px;
+  padding: 0 10px;
+}
+.sign_label_name {
+  height: 30px;
+  width: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Papyrus";
+  font-size: 14px;
+}
+.sign_p {
+  height: 10px;
+  margin: 0 auto;
+  margin-top: 2px;
+  font-family: "Cafe24 Ssurround air";
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
+
+/* 공지사항 상세 */
+.notice_detail_panel_ul {
+  width: 70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.notice_title_panel {
+  width: 96%;
+  margin: 10px auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.notice_title_name {
+  height: 20px;
+  width: 96%;
+  margin: 5px auto;
+  font-family: "Cafe24 Ssurround air";
+}
+.notice_textarea_panel {
+  height: 620px;
+  width: 96%;
+  margin: 10px auto;
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.notice_textarea {
+  resize: none;
+  height: auto;
+  width: 96%;
+  margin: 5px auto;
+  font-family: "Cafe24 Ssurround air";
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+/* 공지사항 & 운동정보 리스트 */
+.notice_list_form {
+  height: 945px;
+}
+.notice_list_panel_label {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Papyrus";
+  font-size: 60px;
+  font-style: normal;
+}
+.notice_search_area {
+  width: 62%;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  border: none;
+}
+.notice_search {
+  height: 20px;
+  width: 100%;
+  margin: 0px 10px;
+  background: none;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+.notice_search:focus {
+    border: 2px solid orange;
+    outline: 2px solid white;
+    border-radius: 30px;
+}
+.notice_search[type="text" i] {
+  padding: 0 10px;
+}
+.notice_list_panel_ul {
+  max-height: 90%;
+  width: 70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 0px;
+  margin: 10px auto;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.notice_list_panel_ul li {
+  max-height: none;
+  height: 20px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+.notice_list_panel_ul li a {
+	font-family : "Cafe24 Ssurround air";
+	color : black;
+	text-decoration: none;
+}
+
+.notice_no_p {
+  height: 18px;
+  width: 10%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Papyrus", "Cafe24 Ssurround air";
+  font-size: 16px;
+}
+.notice_title_p {
+  height: 18px;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Papyrus", "Cafe24 Ssurround air";
+  font-size: 16px;
+}
+.notice_date_p {
+  height: 18px;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Papyrus", "Cafe24 Ssurround air";
+  font-size: 16px;
+}
+
+/* 공지사항 등록 & 수정 */
+.notice_panel_ul {
+  max-height: 700px;
+  width: 70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.notice_panel_ul li {
+  width: 98%;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notice_label_name {
+  height: 30px;
+  width: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: "Papyrus";
+}
+.notice_panel_ul li input {
+  height: 20px;
+  width: 96%;
+  display: inline-block;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.notice_panel_ul li input:focus {
+  border: 2px solid orange;
+  outline: 2px solid white;
+}
+.notice_panel_ul li input[type="text" i] {
+  padding: 0 10px;
+}
+.notice_update_textarea {
+  resize: none;
+  height: 590px;
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  font-family: "Cafe24 Ssurround air";
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+.notice_panel_ul li textarea:focus {
+  border: 2px solid orange;
+  outline: 2px solid white;
+}
+.notice_panel_ul li textarea {
+  padding: 0 10px;
+}
+
+/* 운동기록지 리스트 */
+.record_list_panel_ul {
+  max-height: 800px;
+  height: 100%;
+  width: 70%;
+  padding: 0;
+  margin: 10px auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.record_list_date_name {
+  height: 30px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0px auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-family: "Papyrus";
+  font-size: 24px;
+}
+.record_list_panel_ul li {
+  list-style: none;
+  margin: 0px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.record_list_panel_ul li p {
+  margin: 3px 0px;
+  font-family: "Cafe24 Ssurround air";
+  font-size: 14px;
+}
+.list_panel_label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  font-style: normal;
+  font-family: "Papyrus";
+  margin: 20px auto;
+}
+
+/* 운동기록지 등록 */
+.record_add_panel_ul {
+  max-height: 800px;
+  height: 100%;
+  width: 70%;
+  padding: 0;
+  margin: 10px auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.record_add_panel_ul ::placeholder {
+  font-family: "Papyrus";
+  font-size: 90%;
+  color: black;
+}
+.record_add_panel_ul li {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.record_add_panel_ul li p {
+  margin: 0px auto;
+  margin-bottom: 10px;
+  font-family: "papyrus";
+}
+.record_add_name {
+  display: flex;
+  height: 30px;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Papyrus";
+  margin: 5px auto;
+  align-items: center;
+  justify-content: center;
+}
+.record_add_panel_ul li input {
+  height: 30px;
+  width: 120%;
+  margin: 0px 10px;
+  font-family: "Papyrus";
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.record_add_panel_ul li input:focus {
+  border: 2px solid orange;
+  outline: 2px solid white;
+}
+.record_add_panel_ul li input[type="number" i] {
+  padding: 0 10px;
+}
+.record_add_panel_ul li select {
+  height: 34px;
+  width: 120%;
+  font-family: "Papyrus";
+  font-size: 90%;
+  font-variant: small-caps;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  padding: 5px 0px 5px 10px;
+  margin: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  outline: 0 none;
+}
+.record_add_panel_ul li select option {
+  font-family: "Papyrus", "Cafe24 Ssurround air";
+  font-size: 16px;
+  font-variant: small-caps;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgb(0, 0, 0);
+  padding: 0 auto;
+}
+
+/* 운동정보 상세 */
+.info_panel_ul {
+  max-height: 700px;
+  width: 70%;
+  padding: 10px 0px;
+  margin: 10px auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.info_panel_ul li {
+  max-height: none;
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff10;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+.info_panel_ul li p {
+  margin: 0 10px;
+  font-family: "Cafe24 Ssurround air";
+}
+.info_p {
+  padding-bottom: 10px;
+}
+.info_panel_ul li textarea {
+  resize: none;
+  width: 98%;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  font-family: "Cafe24 Ssurround air";
+  background: none;
+  border: none;
+}
+.info_panel_ul li textarea:focus {
+  outline: none;
+}
+.info_label_name {
+  height: 30px;
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+  font-family: "Papyrus";
+  font-size: 20px;
+}
+.info_panel_ul li input {
+  background: none;
+  height: 20px;
+  width: 96%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: inline-block;
+}
+.info_headline {
+  font-family: "Cafe24 Ssurround air";
+  margin: 5px auto;
+  padding: 0 30px;
+  font-size: 20px;
+}
+.info_line {
+  margin: 20px 0;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/* 운동정보 등록 & 수정 */
+.info_add_panel_ul {
+  max-height: 1000px;
+  width: 70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 0px;
+  margin: 10px auto;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.info_add_panel_ul input:focus {
+  border: 2px solid orange;
+  outline: 2px solid white;
+}
+.info_add_panel_ul input[type="text" i] {
+  padding: 0 10px;
+}
+.info_add_panel_ul textarea:focus {
+  border: 2px solid orange;
+  outline: 2px solid white;
+}
+.info_add_headline {
+  width: 84%;
+  margin: 5px auto;
+  display: flex;
+  font-family: "Cafe24 Ssurround air";
+  font-size: 20px;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.info_add_panel_ul ::placeholder {
+  font-family: "Cafe24 Ssurround air";
+  font-size: 15px;
+  font-variant: small-caps;
+  color: black;
+}
+.info_add_panel_ul li {
+  width: 90%;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  margin: 10px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.info_add_label_name {
+  display: flex;
+  height: 30px;
+  font-size: 20px;
+  font-family: "Papyrus";
+  margin: auto;
+  align-items: center;
+}
+.info_add_textarea {
+  resize: none;
+  height: 150px;
+  width: 98%;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: "Cafe24 Ssurround air";
+  background: none;
+  border: none;
+  border-radius: 5px;
+}
+.info_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+.info_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+.info_div input {
+  background: none;
+  font-family: "Cafe24 Ssurround air";
+  height: 30px;
+  width: 120%;
+  margin: 0px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* button */
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+button,
+button a {
+  text-decoration: none;
+  font-family: "Cafe24 Ssurround air";
+  color: white;
+  font-size: 16px;
+}
+.grayButton {
+  padding: 5px 50px;
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  background-color: rgba(131, 148, 155, 0.3);
+  font-family: "Papyrus", "Cafe24 Ssurround air";
+  font-weight: normal;
+  font-style: normal;
+  cursor :pointer;
+}
+.blue_button {
+  width: 14vw;
+  padding: 2px 0px;
+  margin: 0 auto;
+  background-color: rgb(64, 190, 235);
+  font-family: "Cafe24 Ssurround air";
+  font-size: 120%;
+  font-weight: normal;
+  font-style: normal;
+  border: 0px;
+  border-radius: 10px;
+  outline: 0px;
+  cursor: pointer;
+}
+.red_button {
+  width: 14vw;
+  padding: 2px 0px;
+  margin: 0 auto;
+  background-color: rgb(235, 64, 64);
+  font-family: "Cafe24 Ssurround air";
+  font-size: 120%;
+  font-weight: normal;
+  font-style: normal;
+  border: 0px;
+  border-radius: 10px;
+  outline: 0px;
+  cursor :pointer;
+}
+.gray_button {
+  width: 14vw;
+  padding: 2px 0px;
+  margin: 0 auto;
+  background-color: rgb(83, 79, 79);
+  font-family: "Cafe24 Ssurround air";
+  font-size: 120%;
+  font-weight: normal;
+  font-style: normal;
+  border: 0px;
+  border-radius: 10px;
+  outline: 0px;
+  cursor: pointer;
+}
+.empty_button {
+  width: 14vw;
+  padding: 2px 0px;
+  margin: 0 auto;
+  background-color: rgba(83, 79, 79, 0);
+  font-family: "Cafe24 Ssurround air";
+  font-size: 120%;
+  font-weight: normal;
+  font-style: normal;
+  color: #7d90b100;
+  border: 0px;
+  border-radius: 10px;
+  outline: 0px;
+  
+}
