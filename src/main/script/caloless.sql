@@ -69,19 +69,10 @@ create table tb_notice(
   ndate2 date
 );
 
--- 7-2. 공지사항 더미 생성 -- 
-insert into tb_notice values(sequ_tb_notice_nnum.nextval,'첫 번째 공지사항','공지사항 테스트','admin',sysdate,null,null);
-insert into tb_notice values(sequ_tb_notice_nnum.nextval,'두 번째 공지사항','공지사항 테스트','admin',sysdate,null,null);
-insert into tb_notice values(sequ_tb_notice_nnum.nextval,'세 번째 공지사항','공지사항 테스트','admin',sysdate,null,null);
-insert into tb_notice values(sequ_tb_notice_nnum.nextval,'네 번째 공지사항','공지사항 테스트','admin',sysdate,null,null);
-insert into tb_notice values(sequ_tb_notice_nnum.nextval,'다섯 번째 공지사항','공지사항 테스트','admin',sysdate,null,null);
-insert into tb_notice values(sequ_tb_notice_nnum.nextval,'여섯 번째 공지사항','공지사항 테스트','admin',sysdate,null,null);
-
 --  8. 관리자 아이디 생성 -- 
 insert into tb_user values('admin','admin1234!','관리자',20,'admin@naver.com','m',170,60,'admin');
---  8-2.test 아이디 생성
+--  8-2. test 아이디 생성 --
 insert into tb_user values('test','test1234!','테스트',20,'test@naver.com','m',170,60,'user');
-
 -- 9. 운동정보 등록 전체 드래그 ctrl+shift --
 insert into tb_exer_info values(sequ_exer_info_einum.nextval,'실내운동',3.0,'청소년 성장촉진','무릎관절에 무리',null,sysdate,'admin',sysdate,'줄넘기-천천히','admin');
 insert into tb_exer_info values(sequ_exer_info_einum.nextval,'실내운동',5.5,'청소년 성장촉진','무릎관절에 무리',null,sysdate,'admin',sysdate,'줄넘기-빠르게','admin');
@@ -168,3 +159,5 @@ insert into tb_exer_info values(sequ_exer_info_einum.nextval,'실외운동',5.0,
 -- 10. 커밋 --
 commit;
 
+-- 11. 운동정보 등록 확인 --
+select * from tb_exer_info;
